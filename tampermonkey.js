@@ -12,11 +12,11 @@
     var deleteAllButton,
         deleteAllButtonClass,
         style;
-    
+
     var deleteAll = function() {
         // get all delete buttons
         var deleteButtons = document.querySelectorAll('[data-control-name="clear_conversation"]'),
-        // get message list container
+            // get message list container
             messageListContainer = document.getElementsByClassName('msg-conversations-container__conversations-list')[0],
             confirmButton;
         //do {
@@ -31,7 +31,7 @@
         messageListContainer = document.getElementsByClassName('msg-conversations-container__conversations-list')[0];
         //} while (messageListContainer.children.length > 0);
     };
-    
+
     // create button element, set class and add to DOM
     deleteAllButton = document.createElement('button');
     deleteAllButtonClass = 'delete-all-button';
@@ -39,7 +39,7 @@
     deleteAllButton.className = deleteAllButtonClass;
     deleteAllButton.addEventListener('click', deleteAll);    
     document.getElementsByTagName("body")[0].appendChild(deleteAllButton);
-    
+
     // create style element and add to DOM
     style = document.createElement('style');
     style.innerHTML = '.' + deleteAllButtonClass + ' {position: fixed; top: 1em; right: 1em; z-index: 99999; color: white; background-color: #FCA61C; padding: 10px 20px; border: none; text-transform: uppercase; border-radius: 3em; font-family: sans-serif; font-weight: bold;}';
