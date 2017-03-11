@@ -2,7 +2,7 @@
 // @name         Delete All
 // @version      1.0
 // @description  Delete all messages from LinkedIn
-// @author       You
+// @author       pckltr
 // @match        *://*.linkedin.com/messaging*
 // @grant        none
 // ==/UserScript==
